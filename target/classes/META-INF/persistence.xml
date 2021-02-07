@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="construccionsivefaces" transaction-type="RESOURCE_LOCAL">
+	<!-- <class>entities.Direccion</class>
+		<class>entities.Libro</class> -->
+		
+		<class>com.entities.Product</class>
+		
+		
+		
+		
+			 <class>com.pallol.novela.entities.CompraRealizada</class>
+<class>com.pallol.novela.entities.UsuarioNovela</class>
+<class>com.pallol.novela.entities.Galeria</class>
+<class>com.pallol.novela.entities.Usuario</class>
+<class>com.pallol.novela.entities.Categoria</class>
+<class>com.pallol.novela.entities.Capitulo</class>
+<class>com.pallol.novela.entities.ProductoCompra</class> 
+<class>com.pallol.novela.entities.Personaje</class>
+<class>com.pallol.novela.entities.Rol</class>
+<class>com.pallol.novela.entities.Novela</class>
+<class>com.pallol.novela.entities.Menu</class>
+<class>com.pallol.novela.entities.Persona</class>
+<class>com.pallol.novela.entities.Producto</class>
+<class>com.pallol.novela.entities.Comentario</class>
+
+    
+		
+		
+		
+		
+		
+		
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/noveladb1" />
+			<property name="javax.persistence.jdbc.user" value="root" />
+			<property name="javax.persistence.jdbc.password" value="Kojinanjo1@" />
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+			
+			<!-- Borra y crea las tablas de nuevo a partir de las clases entidades.
+			Cambiar a none una vez se haya generado el esquema por primera vez -->
+			<property name="javax.persistence.schema-generation.database.action" value="drop-and-create" />
+<!-- 			<property name="javax.persistence.schema-generation.database.action" value="none" /> -->
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
+			
+		</properties>
+	</persistence-unit>
+</persistence>
